@@ -2,7 +2,6 @@
 
 A short overview of the main pages and features of the **U of T Course Helper** web application for University of Toronto students.
 
----
 Link to UofT Course Helper: https://app.uoftcoursehelper.com/
 Link to my info website: https://aws.yiyangweb.top/
 ---
