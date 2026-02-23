@@ -1,152 +1,85 @@
-# 🎓 UofT Course Helper
+# U of T Course Helper — Web App Showcase
 
-🌐 Live Demo: https://app.uoftcoursehelper.com  
-
-UofT Course Helper is a full-stack academic planning and course exploration platform designed for University of Toronto students. It provides structured course data, intelligent filtering, discussion features, and AI-assisted suggestions to help students navigate course selection more efficiently.
+A short overview of the main pages and features of the **U of T Course Helper** web application for University of Toronto students.
 
 ---
 
-## 📌 Overview
+## Main / Homepage
 
-This platform was built to simplify academic planning by offering:
+Landing page with search, latest news, and discussion preview.
 
-- Searchable course database
-- Filtering by level and subject
-- Course difficulty and rating visualization
-- Detailed course information pages
-- User authentication system with email verification
-- AI-assisted suggestion feature
-- Scalable cloud deployment architecture
+- **Search bar** — “Search your question here…” with voice search
+- **Latest News** — Auto-updated weekly with the top 5 events; each item shows title, date, and short description
+- **Top Discussion** — Placeholder for featured and trending discussion threads (coming soon)
+- **Navigation** — Main, About UOFT, Course, Discussion, AI Suggest
 
-The system is designed with modular frontend components and RESTful backend services to ensure maintainability and future extensibility.
+![Homepage](images/home.png)
 
 ---
 
-## 🏗️ Tech Stack
+## About U of T
 
-**Frontend**
-- React
-- Dynamic routing
-- Component-based UI architecture
+Introduction to the University of Toronto and the Department of Computer Science.
 
-**Backend**
-- FastAPI
-- RESTful API design
-- Structured request validation
+- **University overview** — Rank, history, campuses, and programs
+- **Department of Computer Science** — Programs, research areas, and industry links
+- **Layout** — Image + text blocks for quick reading
 
-**Database**
-- PostgreSQL (course & user data management)
-
-**Cloud & Deployment**
-- AWS S3 (static hosting)
-- CloudFront CDN
-- Route53 (domain management)
-
-**Security**
-- Email verification system
-- CAPTCHA human verification
-- Password encryption
+![About UOFT](images/about.png)
 
 ---
 
-## 🖥️ Application Walkthrough
+## Course Explorer
 
-### 🏠 Home Page
+Browse and filter U of T courses.
 
-- Global search bar
-- Weekly auto-updated campus news
-- Navigation: Main / About UofT / Course / Discussion / AI Suggest
-- Clean responsive layout
+- **Search** — By course code or name
+- **Filters** — Course level (e.g. 300-level), subject (e.g. Computer Science)
+- **Course cards** — Code, title, difficulty, average rating, star display, and tags (level, subject, class format e.g. 24L/12T)
+- **Grid layout** — Scrollable list of courses (e.g. CSC300, CSC301, CSC302, …)
 
-![Home Page](./assets/home.png)
-
----
-
-### 👤 User Registration
-
-- Secure account creation
-- Email verification code
-- CAPTCHA human validation
-- Password confirmation logic
-
-![Register Page](./assets/register.png)
+![Course Explorer](images/course-explorer.png)
 
 ---
 
-### 🏫 About UofT
+## Course Details
 
-- University overview
-- Department of Computer Science introduction
-- Informational content pages
+Full details for a single course (e.g. CSC369 — Operating Systems).
 
-![About Page](./assets/about.png)
+- **Back link** — “← Back to Course List”
+- **Header** — Course code, title, level, subject, class format
+- **Ratings** — Difficulty and average rating with star display
+- **Official link** — Link to official course page and equivalent codes
+- **Info blocks** — Description, breadth requirements, prerequisite, exclusion
 
----
-
-### 🔎 Course Explorer
-
-- Search by course code or name
-- Filter by course level (100–400)
-- Filter by subject category
-- Display difficulty and average rating
-- Class term indicators
-
-![Course Explorer](./assets/course_explorer.png)
+![Course Details](images/course-details.png)
 
 ---
 
-### 📄 Course Details
+## Register
 
-Each course page includes:
+Create an account and verify email.
 
-- Course description
-- Prerequisites
-- Exclusions
-- Breadth requirements
-- Difficulty rating
-- Average rating
+- **Fields** — Username (e.g. @mail.utoronto.ca), Password, Confirm Password, Email, 6-digit verification code
+- **Actions** — “Send Code” for verification, “Register” to submit
+- **Human verification** — Checkbox + Cloudflare
+- **Login** — “Already have an account? Go to login”
 
-![Course Details](./assets/course_details.png)
+![Register](images/register.png)
 
 ---
 
-## ⚙️ System Architecture
+## Navigation Overview
 
-The project follows a decoupled frontend-backend architecture:
-
-- React frontend communicates with FastAPI backend via REST APIs
-- Backend handles validation, structured responses, and database interaction
-- Static frontend deployed via AWS S3
-- CloudFront used for global CDN distribution
-- Domain managed with Route53
-
-The architecture is designed to support future extensions such as:
-
-- Personalized course tracking
-- User comments and discussion threads
-- Real-time AI recommendation engine
-- Authentication token system
-- Role-based permissions
+| Page        | Purpose                          |
+|------------|-----------------------------------|
+| **Main**   | Home, search, news, discussion   |
+| **About UOFT** | University & CS department info |
+| **Course** | Explorer + course details        |
+| **Discussion** | Forums (coming soon)          |
+| **AI Suggest** | AI-assisted suggestions      |
+| **Login**  | User authentication              |
 
 ---
 
-## 🚀 Future Improvements
-
-- Real-time discussion system
-- Personalized academic planning dashboard
-- ML-based course recommendation
-- Performance optimization and caching
-- Advanced analytics visualization
-
----
-
-## 👨‍💻 Author
-
-Developed by Yiyang Gao  
-University of Toronto – Computer Science  
-
----
-
-## 📜 License
-
-This project is for academic and portfolio demonstration purposes.
+*Screenshots reflect the current UI. For the live app or source code, see the main repository.*
